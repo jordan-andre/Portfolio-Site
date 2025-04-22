@@ -1,8 +1,13 @@
 body{
-
+    font-family: "futura pt", sans-serif;
+    /* margin-right: 40vw; */
 }
 h1{
-    font-size: 50px;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 200;
+    color: #53000B;
+    padding-left: 2vw;
 }
 
 
@@ -16,34 +21,53 @@ h1{
     overflow: hidden;
     display:flex;
     justify-content: center;
-    margin-right: 40px;
+    margin-right: 5vw;
 
 }
 .navbar a{
     text-decoration: none;
-    color: black;
-    /* padding: 10px 250px; */
+    color: #53000B;
     display: block;
     text-align:center;
-    font-size: 100px;
+    font-size: 7em;
+    font-weight: 800;
     display: inline-block;
 }
 .navbar li{
-    /* float: left; */
     display: inline-block;
-    padding: 10px 250px;
+    padding: 0vh 10vw;
+}
+.logo-container {
+    fill: #2e4a04;
+    stroke-width: 0px;
+    position: absolute;
+    width: 12vw;
+    height: auto;
 }
 
 
 
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .navbar li {
+        padding: 2vh 8vw; /* Reduce padding */
+    }
 
-/* .navbar {
-    position: fixed;  /*Navbar will not move from its position if you want when you scroll it stuck at top then just replace position: fixed with sticky*/
-    /* bottom: 0;
-    width: 100vw;
-    height: 70px;
-    color: #000000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  } */ 
+    .navbar a {
+        font-size: 4em; /* Reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .navbar li {
+        padding: 2vh 8vw; /* Further reduce padding */
+    }
+    .navbar a {
+        font-size: 4em; /* Further reduce font size */
+    }
+}
