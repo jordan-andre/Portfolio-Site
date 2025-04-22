@@ -43,9 +43,31 @@ h1{
     position: absolute;
     width: 12vw;
     height: auto;
+    left: 0;
+   
 }
 
-
+#Layer_1 {
+    animation: Layer_1bounce 30s infinite;
+  }
+  
+  @keyframes Layer_1bounce {
+    0% {
+        transform: translate(calc(50vw - 6vw), -15vh); /* Middle of the top side */
+    }
+    25% {
+        transform: translate(calc(100vw - 12vw), calc(40vh - 6vw)); /* Middle of the right side */
+    }
+    50% {
+        transform: translate(calc(50vw - 6vw), calc(95vh - 12vw)); /* Middle of the bottom side */
+    }
+    75% {
+        transform: translate(0, calc(50vh - 6vw)); /* Middle of the left side */
+    }
+    100% {
+        transform: translate(calc(50vw - 6vw), -15vh); /* Return to the middle of the top side */
+    }
+  }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
@@ -55,6 +77,9 @@ h1{
 
     .navbar a {
         font-size: 4em; /* Reduce font size */
+    }
+    .logo-container {
+        width: 12vw; 
     }
 }
 
@@ -69,5 +94,8 @@ h1{
     }
     .navbar a {
         font-size: 4em; /* Further reduce font size */
+    }
+    .logo-container {
+        width: 12vw; 
     }
 }
