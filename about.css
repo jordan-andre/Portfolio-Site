@@ -1,0 +1,51 @@
+body{
+    font-family: "futura-pt", sans-serif;
+    /* margin-right: 40vw; */
+}
+h1{
+    font-size: 10vw;
+    font-weight: 800;
+    color: #6e050e;
+    text-align: right;
+    padding-right: 2vw;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+ }
+.navbar ul{
+    list-style-type: none;
+    overflow: hidden;
+    display:flex;
+    justify-content: right;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: #6e050e;
+    display: block;
+    text-align:center;
+    font-size: 3vw;
+    font-weight: 400;
+    font-style: italic;
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+    padding: 0vh 3vw;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.logo-container {
+    fill: #2e4a04;
+    stroke-width: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12vw;
+    height: auto;
+
+}

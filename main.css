@@ -1,11 +1,11 @@
 body{
-    font-family: "futura pt", sans-serif;
+    font-family: "futura-pt", sans-serif;
     /* margin-right: 40vw; */
 }
 h1{
-    font-size: 2em;
+    font-size: 3vw;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 400;
     color: #6e050e;
     padding-left: 2vw;
 }
@@ -15,6 +15,7 @@ h1{
     position: fixed;
     bottom: 0;
     width: 100%;
+   
  }
 .navbar ul{
     list-style-type: none;
@@ -29,13 +30,13 @@ h1{
     color: #6e050e;
     display: block;
     text-align:center;
-    font-size: 7em;
+    font-size: 10vw;
     font-weight: 800;
     display: inline-block;
 }
 .navbar li{
     display: inline-block;
-    padding: 0vh 10vw;
+    padding: 5vh 10vw;
 }
 .logo-container {
     fill: #2e4a04;
@@ -102,6 +103,17 @@ h1{
     100% {
         transform: translate(calc(50vw - 6vw), -20vh); 
     }
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b44c47;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
 }
 
 /* Responsive styles for smaller screens */

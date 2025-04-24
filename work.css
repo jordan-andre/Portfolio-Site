@@ -1,9 +1,9 @@
 body{
-    font-family: "futura pt", sans-serif;
+    font-family: "futura-pt", sans-serif;
     /* margin-right: 40vw; */
 }
 h1{
-    font-size: 7em;
+    font-size: 10vw;
     font-weight: 800;
     color: #6e050e;
     text-align: right;
@@ -12,6 +12,7 @@ h1{
 .navbar{
     position: fixed;
     width: 100%;
+    top: 0;
  }
 .navbar ul{
     list-style-type: none;
@@ -25,12 +26,26 @@ h1{
     color: #6e050e;
     display: block;
     text-align:center;
-    font-size: 2em;
-    font-weight: 200;
+    font-size: 3vw;
+    font-weight: 400;
     font-style: italic;
     display: inline-block;
 }
 .navbar li{
     display: inline-block;
     padding: 0vh 3vw;
+}
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+.logo-container {
+    fill: #2e4a04;
+    stroke-width: 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12vw;
+    height: auto;
+
 }
