@@ -6,7 +6,7 @@ h1{
     font-size: 2em;
     font-style: italic;
     font-weight: 200;
-    color: #53000B;
+    color: #6e050e;
     padding-left: 2vw;
 }
 
@@ -26,7 +26,7 @@ h1{
 }
 .navbar a{
     text-decoration: none;
-    color: #53000B;
+    color: #6e050e;
     display: block;
     text-align:center;
     font-size: 7em;
@@ -41,33 +41,68 @@ h1{
     fill: #2e4a04;
     stroke-width: 0px;
     position: absolute;
+    /* top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
     width: 12vw;
     height: auto;
-    left: 0;
-   
+    z-index: -1; /* Ensure the logo is behind other content */
 }
 
 #Layer_1 {
-    animation: Layer_1bounce 30s infinite;
-  }
+    animation: Layer_1ColorChange 60s steps(1) infinite, Layer_1bounce 60s infinite;
+}
+
+/* Keyframes for color change animation */
+@keyframes Layer_1ColorChange {
+    0% {
+        fill: #2e4a04; /* Start color */
+    }
+    16% {
+        fill: #b44c47; /* Intermediate color */
+    }
+    33% {
+        fill: #6e050e; /* Another intermediate color */
+    }
+    50% {
+        fill: #2e4a04; /* Start color */
+    }
+    66% {
+        fill: #b44c47; /* Intermediate color */
+    }
+    82% {
+        fill: #6e050e;
+    }
+    100% {
+        fill: #2e4a04; /* Return to start color */
+    }
+}
+
+
   
   @keyframes Layer_1bounce {
     0% {
-        transform: translate(calc(50vw - 6vw), -15vh); /* Middle of the top side */
+        transform: translate(calc(50vw - 6vw), -20vh); 
     }
-    25% {
-        transform: translate(calc(100vw - 12vw), calc(40vh - 6vw)); /* Middle of the right side */
+    16% {
+        transform: translate(calc(75vw - 6vw), calc(100vh - 15vw)); 
+    }
+    33% {
+        transform: translate(calc(100vw - 12vw), calc(60vh - 6vw)); 
     }
     50% {
-        transform: translate(calc(50vw - 6vw), calc(95vh - 12vw)); /* Middle of the bottom side */
+        transform: translate(calc(30vw - 6vw), -20vh); 
     }
-    75% {
-        transform: translate(0, calc(50vh - 6vw)); /* Middle of the left side */
+    66% {
+        transform: translate(0, calc(50vh - 6vw)); 
+    }
+    82% {
+        transform: translate(calc(30vw - 6vw), calc(100vh - 15vw)); 
     }
     100% {
-        transform: translate(calc(50vw - 6vw), -15vh); /* Return to the middle of the top side */
+        transform: translate(calc(50vw - 6vw), -20vh); 
     }
-  }
+}
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
