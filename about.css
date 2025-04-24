@@ -10,7 +10,7 @@ h1{
     padding-right: 2vw;
 }
 .navbar{
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
  }
@@ -48,4 +48,56 @@ h1{
     width: 12vw;
     height: auto;
 
+}
+
+.page-wrapper {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    gap: 3rem; /* Add spacing between grid items */
+    padding: 3rem; /* Add padding around the grid */
+    
+}
+
+.page-wrapper .image  {
+    width: 80%; /* Make the image fill the grid column */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b44c47;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    h1{
+        font-size: 17vw;
+        line-height: 1;
+    }
+    .navbar a{
+        font-size: 6vw;
+    }
+    .logo-container {
+        width: 20vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 14vw;
+        line-height: 0.8;
+    }
+    .navbar a{
+        font-size: 5vw;
+    }
+    .logo-container {
+        width: 17vw; 
+    }
 }

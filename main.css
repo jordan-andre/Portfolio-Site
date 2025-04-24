@@ -1,6 +1,7 @@
 body{
     font-family: "futura-pt", sans-serif;
-    /* margin-right: 40vw; */
+    
+  
 }
 h1{
     font-size: 3vw;
@@ -13,7 +14,7 @@ h1{
 
 .navbar{
     position: fixed;
-    bottom: 0;
+    bottom: 10vh;
     width: 100%;
    
  }
@@ -36,8 +37,13 @@ h1{
 }
 .navbar li{
     display: inline-block;
-    padding: 5vh 10vw;
+    padding: 0vh 10vw;
 }
+.navbar-spacer {
+    height: 30vh; /* Match the height of the navbar */
+    background-color: transparent; /* Optional: Make it invisible */
+}
+
 .logo-container {
     fill: #2e4a04;
     stroke-width: 0px;
@@ -118,19 +124,30 @@ footer{
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
+    h1{
+        font-size: 6vw;
+    }
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
     .navbar li {
         padding: 2vh 8vw; /* Reduce padding */
     }
 
     .navbar a {
-        font-size: 4em; /* Reduce font size */
+        font-size: 18vw;
+        line-height: 0.8;
     }
     .logo-container {
-        width: 12vw; 
+        width: 20vw; 
     }
 }
 
 @media (max-width: 480px) {
+    h1{
+        font-size: 5vw;
+    }
     .navbar ul {
         flex-direction: column; /* Stack items vertically */
         align-items: center;
@@ -140,9 +157,10 @@ footer{
         padding: 2vh 8vw; /* Further reduce padding */
     }
     .navbar a {
-        font-size: 4em; /* Further reduce font size */
+        font-size: 15vw;
+        line-height: 0.8;
     }
     .logo-container {
-        width: 12vw; 
+        width: 17vw; 
     }
 }

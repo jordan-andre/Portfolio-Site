@@ -10,7 +10,7 @@ h1{
     padding-right: 2vw;
 }
 .navbar{
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 0;
  }
@@ -48,4 +48,42 @@ h1{
     width: 12vw;
     height: auto;
 
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b44c47;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    h1{
+        font-size: 17vw;
+        line-height: 1;
+    }
+    .navbar a{
+        font-size: 6vw;
+    }
+    .logo-container {
+        width: 20vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1{
+        font-size: 14vw;
+        line-height: 0.8;
+    }
+    .navbar a{
+        font-size: 5vw;
+    }
+    .logo-container {
+        width: 17vw; 
+    }
 }
