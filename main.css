@@ -110,16 +110,25 @@ h1{
         transform: translate(calc(50vw - 6vw), -20vh); 
     }
 }
-
+h2{
+    text-align: center;
+}
 .footer{
-    /* position: fixed; */
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: transparent;
-    height: 10vh;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.footer-icons {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align the icons vertically */
+    gap: 1rem; /* Add spacing between the icons */
 }
 #email {
     fill: black;
@@ -131,6 +140,17 @@ h1{
     fill: black;
     width: auto;
     height: 50px;
+  }
+  .instagram {
+    fill: black;
+    width: 10px;
+    height: 10px;
+    max-width: 20px;
+  }
+  #feedback-survey{
+    text-decoration: none;
+    color: black;
+    text-align: center;
   }
   /* Hover Effect */
   #linkedin:hover {
