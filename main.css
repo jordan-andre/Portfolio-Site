@@ -111,16 +111,37 @@ h1{
     }
 }
 
-footer{
+.footer{
     /* position: fixed; */
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #b44c47;
+    background-color: transparent;
     height: 10vh;
     display: flex;
     justify-content: space-around;
 }
+#email {
+    fill: black;
+    width: auto;
+    height: 60px;
+    
+  }
+  #linkedin {
+    fill: black;
+    width: auto;
+    height: 50px;
+  }
+  /* Hover Effect */
+  #linkedin:hover {
+    transform: scale(1.2);
+    fill: #6e050e;
+  }
+  #email:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    fill: #6e050e;
+  }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
