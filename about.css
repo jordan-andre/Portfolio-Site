@@ -165,23 +165,26 @@ footer{
         width: 20vw; 
     }
     .page-wrapper {
+        width: 100%;
         grid-template-columns: 1fr;
         grid-template-areas: 
     "a"
     "m";
         justify-content: center;
         align-items: center;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        
+        margin: 0;
+        padding: 1rem;
+       
     }
-    #image {
+    #image img{
         width: 100%;
         height: auto;
+        max-width: 500px; /* Set a maximum width */
+        min-width: 300px;
     }
     #about {
-        width: 100%;
-        height: auto;
+        max-width: 400px;
+        min-width: 330px;
     }
 }
 
@@ -197,9 +200,18 @@ footer{
         width: 17vw; 
     }
     .page-wrapper {
+        justify-content: center;
         grid-template-columns: 1fr;
         grid-template-areas: 
     "a"
     "m";
+    }
+    #image img{
+        min-width: 330px;
+        max-width: 400px;
+    }
+    #about{
+    width: 330px;
+    max-width: 330px;
     }
 }

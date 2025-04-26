@@ -143,6 +143,9 @@ footer{
     .logo-container {
         width: 20vw; 
     }
+    .page-wrapper {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -155,5 +158,8 @@ footer{
     }
     .logo-container {
         width: 17vw; 
+    }
+    .page-wrapper {
+        grid-template-columns: 1fr;
     }
 }
