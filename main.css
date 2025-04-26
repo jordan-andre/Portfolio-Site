@@ -39,6 +39,9 @@ h1{
     display: inline-block;
     padding: 0vh 10vw;
 }
+.navbar a:hover{
+    text-decoration: underline;
+}
 .navbar-spacer {
     height: 10vh; /* Match the height of the navbar */
     width: 100%; /* Ensure it spans the full width */

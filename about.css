@@ -75,11 +75,13 @@ h1{
     grid-area: a;
     width: 400px;
     max-width: 400px;
-    
-   
 }
 
-
+h2{
+    color:#6e050e;
+    font-weight: 800;
+    margin: 0;
+}
 footer{
     position: relative;
     bottom: 0;
@@ -93,54 +95,62 @@ footer{
     align-items: center;
     padding-bottom: 2vh;
 }
-.footer-icons {
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center the icons horizontally */
-    align-items: center; /* Align the icons vertically */
-    gap: 1rem; /* Add spacing between the icons */
-    bottom: 0;
-}
-#email {
-    fill: black;
-    width: auto;
-    height: 60px;
-    
+#email a{
+    text-decoration: none;
+    color: #6e050e;
+    text-align: center; 
   }
-  #linkedin {
-    fill: black;
-    width: auto;
-    height: 50px;
+  #linkedin a{
+    text-decoration: none;
+    color: #6e050e;
+    text-align: center;
   }
-  #instagram {
-   
-    width: 10px;
-    height: 10px;
-    max-width: 20px;
+  #instagram a{
+    text-decoration: none;
+    color: #6e050e;
+    text-align: center;
   }
   #feedback-survey a {
     text-decoration: none;
-    color: black;
+    color: #6e050e;
     text-align: center;
   }
   /* Hover Effect */
-  #email:hover {
-    transform: scale(1.1);
-    transform-origin: center;
-    fill: #6e050e;
+  #email a:hover {
+    text-decoration: underline;
   } 
-  #linkedin:hover {
-    transform: scale(1.2);
-    fill: #6e050e;
+  #linkedin a:hover {
+    text-decoration: underline;
   }
-  #instagram:hover {
-    transform: scale(1.2);
-    fill: #6e050e;
+  #instagram a:hover {
+    text-decoration: underline;
   }
   #feedback-survey a:hover {
     text-decoration: underline;
   }
 
-
+#resume{
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    background-color: #6e050e;
+    border: none;
+    border-radius: 50px;
+    margin: 0 auto 30px auto;
+    padding: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    position: relative;
+}
+#resume a{
+    color: #ffffff;
+    text-decoration: none;
+}
+#resume:hover{
+    background-color: #2e4a04;
+}
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
