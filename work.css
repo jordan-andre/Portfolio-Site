@@ -50,16 +50,78 @@ h1{
 
 }
 
+.page-wrapper {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
+    gap: 3rem; /* Add spacing between grid items */
+    margin-left: 14rem;
+    margin-right: 3rem;
+    align-items: top;
+    justify-content: center;
+    grid-template-areas: 
+    "m a";
+}
+
 footer{
-    /* position: fixed; */
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #b44c47;
-    height: 10vh;
+    background-color: transparent;
+    height: auto;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vh;
 }
+.footer-icons {
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center the icons horizontally */
+    align-items: center; /* Align the icons vertically */
+    gap: 1rem; /* Add spacing between the icons */
+    bottom: 0;
+}
+#email {
+    fill: black;
+    width: auto;
+    height: 60px;
+    
+  }
+  #linkedin {
+    fill: black;
+    width: auto;
+    height: 50px;
+  }
+  #instagram {
+   
+    width: 10px;
+    height: 10px;
+    max-width: 20px;
+  }
+  #feedback-survey a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+  /* Hover Effect */
+  #email:hover {
+    transform: scale(1.1);
+    transform-origin: center;
+    fill: #6e050e;
+  } 
+  #linkedin:hover {
+    transform: scale(1.2);
+    fill: #6e050e;
+  }
+  #instagram:hover {
+    transform: scale(1.2);
+    fill: #6e050e;
+  }
+  #feedback-survey a:hover {
+    text-decoration: underline;
+  }
+
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
@@ -78,7 +140,7 @@ footer{
 @media (max-width: 480px) {
     h1{
         font-size: 14vw;
-        line-height: 0.8;
+        line-height: 1;
     }
     .navbar a{
         font-size: 5vw;

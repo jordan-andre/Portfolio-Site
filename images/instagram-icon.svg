@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.9.6, SVG Export Plug-In . SVG Version: 9.03 Build 54986)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 256 256" style="enable-background:new 0 0 256 256;" xml:space="preserve">
+	 viewBox="0 0 205 205.9" style="enable-background:new 0 0 205 205.9;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
 </style>
-<rect class="st0" width="256" height="256"/>
-<circle cx="128" cy="128" r="32"/>
-<path d="M172,28H84c-30.9,0-56,25.1-56,56v88c0,30.9,25.1,56,56,56h88c30.9,0,56-25.1,56-56l0,0V84C228,53.1,202.9,28,172,28z
-	 M128,176c-26.5,0-48-21.5-48-48s21.5-48,48-48s48,21.5,48,48S154.5,176,128,176z M180,88c-6.6,0-12-5.4-12-12s5.4-12,12-12
-	s12,5.4,12,12S186.6,88,180,88z"/>
+<rect x="-28" y="-22.1" class="st0" width="256" height="256"/>
+<circle cx="103" cy="102.9" r="32"/>
+<path d="M147,2.9H59C28.1,2.9,3,28,3,58.9v88c0,30.9,25.1,56,56,56h88c30.9,0,56-25.1,56-56l0,0v-88C203,28,177.9,2.9,147,2.9z
+	 M103,150.9c-26.5,0-48-21.5-48-48s21.5-48,48-48s48,21.5,48,48S129.5,150.9,103,150.9z M155,62.9c-6.6,0-12-5.4-12-12s5.4-12,12-12
+	s12,5.4,12,12S161.6,62.9,155,62.9z"/>
 </svg>

@@ -1,6 +1,6 @@
 body{
     font-family: "futura-pt", sans-serif;
-    
+    height: 100%;
   
 }
 h1{
@@ -14,9 +14,9 @@ h1{
 
 .navbar{
     position: fixed;
-    bottom: 10vh;
+    bottom: 0;
     width: 100%;
-   
+    z-index: 10;
  }
 .navbar ul{
     list-style-type: none;
@@ -40,8 +40,8 @@ h1{
     padding: 0vh 10vw;
 }
 .navbar-spacer {
-    height: 30vh; /* Match the height of the navbar */
-    background-color: transparent; /* Optional: Make it invisible */
+    height: 10vh; /* Match the height of the navbar */
+    width: 100%; /* Ensure it spans the full width */
 }
 
 .logo-container {
@@ -113,22 +113,25 @@ h1{
 h2{
     text-align: center;
 }
-.footer{
-    position: fixed;
-    bottom: 0;
+/* footer{
+    position: absolute;
+    bottom: -20vh;
     left: 0;
     width: 100%;
     background-color: transparent;
     height: auto;
     display: flex;
+    flex-direction: column;;
     justify-content: center;
     align-items: center;
+    overflow: visible;
 }
 .footer-icons {
-    display: flex; /* Enable Flexbox */
-    justify-content: center; /* Center the icons horizontally */
-    align-items: center; /* Align the icons vertically */
-    gap: 1rem; /* Add spacing between the icons */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; 
+    bottom: 0;
 }
 #email {
     fill: black;
@@ -141,27 +144,34 @@ h2{
     width: auto;
     height: 50px;
   }
-  .instagram {
-    fill: black;
+  #instagram {
+   
     width: 10px;
     height: 10px;
     max-width: 20px;
   }
-  #feedback-survey{
+  #feedback-survey a {
     text-decoration: none;
     color: black;
     text-align: center;
   }
-  /* Hover Effect */
-  #linkedin:hover {
-    transform: scale(1.2);
-    fill: #6e050e;
-  }
+  Hover Effect
   #email:hover {
     transform: scale(1.1);
     transform-origin: center;
     fill: #6e050e;
+  } 
+  #linkedin:hover {
+    transform: scale(1.2);
+    fill: #6e050e;
   }
+  #instagram:hover {
+    transform: scale(1.2);
+    fill: #6e050e;
+  }
+  #feedback-survey a:hover {
+    text-decoration: underline;
+  } */
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
