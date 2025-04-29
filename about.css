@@ -53,7 +53,8 @@ h1{
 .page-wrapper {
     display: grid; /* Enable grid layout */
     grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
-    gap: 3rem; /* Add spacing between grid items */
+    column-gap: 3rem; /* Add spacing between grid items */
+    
     margin-left: 14rem;
     margin-right: 3rem;
     align-items: top;
@@ -143,10 +144,13 @@ footer{
     font-size: 1.5em;
     font-style: italic;
     position: relative;
+    grid-column: 1;
+    margin-right: 0;
 }
 #resume a{
     color: #ffffff;
     text-decoration: none;
+    display: block; /* make the link fill the button */
 }
 #resume:hover{
     background-color: #2e4a04;
@@ -179,12 +183,15 @@ footer{
     #image img{
         width: 100%;
         height: auto;
-        max-width: 500px; /* Set a maximum width */
+        max-width: 400px; /* Set a maximum width */
         min-width: 300px;
     }
     #about {
         max-width: 400px;
         min-width: 330px;
+    }
+    #resume {
+        margin: 0 auto;
     }
 }
 
@@ -207,11 +214,14 @@ footer{
     "m";
     }
     #image img{
+        max-width: 330px;
         min-width: 330px;
-        max-width: 400px;
     }
     #about{
     width: 330px;
     max-width: 330px;
+    }
+    #resume {
+        margin: 0 auto;
     }
 }

@@ -54,37 +54,39 @@ h1{
     /* top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    width: 12vw;
+    width: 20vw;
     height: auto;
     z-index: -1; /* Ensure the logo is behind other content */
 }
+
 
 #Layer_1 {
     animation: Layer_1ColorChange 60s steps(1) infinite, Layer_1bounce 60s infinite;
 }
 
+
 /* Keyframes for color change animation */
 @keyframes Layer_1ColorChange {
     0% {
-        fill: #2e4a04; /* Start color */
+        fill: #2e4a04; 
     }
     16% {
-        fill: #b44c47; /* Intermediate color */
+        fill: #b44c47; 
     }
     33% {
-        fill: #6e050e; /* Another intermediate color */
+        fill: #6e050e; 
     }
     50% {
-        fill: #2e4a04; /* Start color */
+        fill: #2e4a04; 
     }
     66% {
-        fill: #b44c47; /* Intermediate color */
+        fill: #b44c47; 
     }
     82% {
         fill: #6e050e;
     }
     100% {
-        fill: #2e4a04; /* Return to start color */
+        fill: #2e4a04; 
     }
 }
 
@@ -116,65 +118,7 @@ h1{
 h2{
     text-align: center;
 }
-/* footer{
-    position: absolute;
-    bottom: -20vh;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    height: auto;
-    display: flex;
-    flex-direction: column;;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-}
-.footer-icons {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    gap: 1rem; 
-    bottom: 0;
-}
-#email {
-    fill: black;
-    width: auto;
-    height: 60px;
-    
-  }
-  #linkedin {
-    fill: black;
-    width: auto;
-    height: 50px;
-  }
-  #instagram {
-   
-    width: 10px;
-    height: 10px;
-    max-width: 20px;
-  }
-  #feedback-survey a {
-    text-decoration: none;
-    color: black;
-    text-align: center;
-  }
-  Hover Effect
-  #email:hover {
-    transform: scale(1.1);
-    transform-origin: center;
-    fill: #6e050e;
-  } 
-  #linkedin:hover {
-    transform: scale(1.2);
-    fill: #6e050e;
-  }
-  #instagram:hover {
-    transform: scale(1.2);
-    fill: #6e050e;
-  }
-  #feedback-survey a:hover {
-    text-decoration: underline;
-  } */
+
 
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
