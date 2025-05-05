@@ -130,7 +130,10 @@ footer{
     text-decoration: underline;
   }
 
-
+  a{
+    text-decoration: none;
+    
+  }
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
     h1{

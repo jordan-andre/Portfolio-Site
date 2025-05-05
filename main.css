@@ -93,7 +93,7 @@ h1{
 
   
   @keyframes Layer_1bounce {
-    0% {
+    /* 0% {
         transform: translate(calc(50vw - 6vw), -20vh); 
     }
     16% {
@@ -113,6 +113,27 @@ h1{
     }
     100% {
         transform: translate(calc(50vw - 6vw), -20vh); 
+    } */
+    0% {
+        transform: translate(calc(50vw - 6vw), -35vh); /* Start at the center-top */
+    }
+    16% {
+        transform: translate(calc(75vw - 6vw), calc(85vh - 15vw)); /* Stay within the bottom-right */
+    }
+    33% {
+        transform: translate(calc(90vw - 12vw), calc(50vh - 6vw)); /* Stay within the right-center */
+    }
+    50% {
+        transform: translate(calc(30vw - 6vw), -35vh); /* Move to the left-top */
+    }
+    66% {
+        transform: translate(calc(10vw), calc(50vh - 6vw)); /* Stay within the left-center */
+    }
+    82% {
+        transform: translate(calc(30vw - 6vw), calc(85vh - 15vw)); /* Stay within the bottom-left */
+    }
+    100% {
+        transform: translate(calc(50vw - 6vw), -35vh); /* Return to the center-top */
     }
 }
 h2{
