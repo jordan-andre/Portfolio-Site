@@ -8,6 +8,7 @@ h1{
     color: #6e050e;
     text-align: right;
     padding-right: 2vw;
+    line-height: 1;
 }
 .navbar{
     position: absolute;
@@ -54,9 +55,8 @@ h1{
     display: grid; /* Enable grid layout */
     grid-template-columns: repeat(2, 1fr); /* Create 2 equal-width columns */
     column-gap: 3rem; /* Add spacing between grid items */
-    
-    margin-left: 14rem;
-    margin-right: 3rem;
+    margin: 0 auto;
+    width: 100%;
     align-items: top;
     justify-content: center;
     grid-template-areas: 
@@ -67,10 +67,11 @@ h1{
     
 }
 #image img {
-    width: 100%; /* Make the image responsive */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 600px; /* Set a maximum width */
+    width: 100%; 
+    height: auto; 
+    max-width: 450px; 
     min-width: 400px;
+    float: right;
 }
 #about {
     grid-area: a;
@@ -95,6 +96,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding-bottom: 2vh;
+    padding-top: 20vh;
 }
 #email a{
     text-decoration: none;
@@ -119,7 +121,6 @@ footer{
   /* link styling */
   a{
     text-decoration: none;
-    
   }
   /* Hover Effect */
   #email a:hover {
@@ -137,7 +138,7 @@ footer{
 
 #resume{
     width: 30%;
-    max-width: 400px;
+    width: 150px;
     height: auto;
     background-color: #6e050e;
     border: none;
@@ -177,8 +178,8 @@ footer{
         width: 100%;
         grid-template-columns: 1fr;
         grid-template-areas: 
-    "a"
-    "m";
+    "m"
+    "a";
         justify-content: center;
         align-items: center;
         margin: 0;
@@ -188,15 +189,17 @@ footer{
     #image img{
         width: 100%;
         height: auto;
-        max-width: 400px; /* Set a maximum width */
+        max-width: 400px; 
         min-width: 300px;
+        float: left;
     }
     #about {
         max-width: 400px;
         min-width: 330px;
     }
     #resume {
-        margin: 0 auto;
+        margin: 0;
+        
     }
 }
 
@@ -215,18 +218,19 @@ footer{
         justify-content: center;
         grid-template-columns: 1fr;
         grid-template-areas: 
-    "a"
-    "m";
+    "m"
+    "a";
     }
     #image img{
         max-width: 330px;
         min-width: 330px;
+        float: left;
     }
     #about{
     width: 330px;
     max-width: 330px;
     }
     #resume {
-        margin: 0 auto;
+        margin: 0;
     }
 }
